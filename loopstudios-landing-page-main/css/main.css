@@ -1,0 +1,283 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+section.header .wrapper {
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-position-y: -2em;
+  background-size: cover;
+  height: 60em;
+  padding: 3em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav,
+.close {
+  display: none;
+}
+
+h1.title {
+  z-index: 2;
+  position: relative;
+  top: -9em;
+  font-size: 5rem;
+  color: white;
+  border: 1px solid white;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.leftcol {
+  margin-top: -8em;
+  height: 35em;
+  background-image: url(../images/mobile/image-interactive.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 2em;
+}
+
+.rightcol h1,
+p {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin: 2em 1.5em 1em;
+}
+
+.rightcol h1 {
+  font-size: 3rem;
+}
+
+.rightcol p {
+  margin: 0 8em;
+  line-height: 1.5em;
+}
+
+section.creation .wrapper h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.topone {
+  display: none;
+}
+
+.gallery {
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.pic {
+  color: white;
+}
+
+.pic p {
+  margin-top: 8em;
+  margin-left: -13em;
+}
+
+.pic-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.pic-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.pic-top .pic {
+  height: 15em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic-bottom .pic {
+  height: 15em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic-top .pic:nth-child(1) {
+  background-image: url(../images/mobile/image-deep-earth.jpg);
+}
+
+.pic-top .pic:nth-child(2) {
+  background-image: url(../images/mobile/image-night-arcade.jpg);
+}
+
+.pic-top .pic:nth-child(3) {
+  background-image: url(../images/mobile/image-soccer-team.jpg);
+}
+
+.pic-top .pic:nth-child(4) {
+  background-image: url(../images/mobile/image-grid.jpg);
+}
+
+.pic-bottom .pic:nth-of-type(1) {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+
+.pic-bottom .pic:nth-of-type(2) {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+
+.pic-bottom .pic:nth-of-type(3) {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+
+.pic-bottom .pic:nth-of-type(4) {
+  margin-bottom: 5em;
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+
+.bottomone {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 1em 3em;
+  margin-left: 13em;
+  margin-top: 15em;
+  margin-bottom: 5em;
+}
+
+footer {
+  background-color: black;
+  height: 35em;
+  margin-top: 10em;
+  padding-top: 5em;
+}
+
+footer .wrapper {
+  text-align: center;
+}
+
+footer .wrapper .left nav {
+  display: block;
+}
+
+footer .wrapper .left nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .wrapper .left nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.gray {
+  color: gray;
+}
+
+.logoo {
+  margin-left: 4em;
+}
+
+.right {
+  margin-top: 3em;
+  margin-left: 3em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  section.header .wrapper nav {
+    display: block;
+  }
+
+  section.header header .wrapper {
+    padding: 0 8em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -15em;
+    background-image: url(../images/desktop/image-hero.jpg);
+  }
+
+  section.header .wrapper nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+  }
+
+  section.header .wrapper nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h1.title {
+    padding: 1em;
+    margin-right: 7.5em;
+  }
+
+  section.hero .wrapper {
+    display: flex;
+  }
+
+  .rightcol {
+    position: relative;
+    z-index: 2;
+    top: 15em;
+    left: -10em;
+    width: 150em;
+    background-color: white;
+  }
+
+  .rightcol p {
+    text-align: start;
+    margin-right: 0;
+    margin-left: 7em;
+  }
+
+  .leftcol {
+    width: 180em;
+    background-image: url(../images/desktop/image-interactive.jpg);
+  }
+
+  section.hero {
+    margin-bottom: 15em;
+  }
+
+  .pic {
+    width: 10em;
+  }
+
+  .pic-top {
+    flex-direction: row;
+  }
+
+  .pic-top .top {
+    height: 20em;
+    width: 10em;
+  }
+
+  .pic-bottom {
+    flex-direction: row;
+  }
+}
